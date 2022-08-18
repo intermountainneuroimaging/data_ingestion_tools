@@ -47,4 +47,30 @@ python fmriprep_upload.py <path-to-fmriprep-data> <group> <project> --subject LA
 
 Here, we will infer the fmriprep derivative data you want to upload based on the path to your fmriprep directory and the subject and session information provided. Once sucessfully uploaded, you will see a new analysis in the identified subject and session within Flywheel called "bids-fmriprep."
 
-A few important points to keep in mind, we do require specific file strucutre for sucessful upload. An example format is provided in this repository, and is detailed below.
+A few important points to keep in mind, we do require specific file structure for sucessful upload. An example format is provided in this repository, and is detailed below.
+```
+Source Data Path - should be fmriprep parent directory
+
+fmriprep
+  |--sub-001
+     |--ses-01
+        |--anat
+          |--files...
+        |--func
+          |--files...
+  |--sub-002
+  ...
+  |--logs  <<------- ADD Logs directory with all compute logs (this 
+                               can be overwritten with --log-path flag)
+  |--scripts <<----- ADD scripts directory with all computer code used 
+                               to generate results (this can be overwritten
+                               with --scripts-path flag)
+  |--analysis_configuration.txt   <<----- This file most exist here, 
+                                          containing the configuration 
+                                          settings used in the pipeline
+  |--analysis_information.txt     <<----- This file must exist here,
+                                          containing the information about
+                                          the executed pipeline or software
+```
+
+See examples of this directory structure in: `test_files/fmriprep_derivs`
