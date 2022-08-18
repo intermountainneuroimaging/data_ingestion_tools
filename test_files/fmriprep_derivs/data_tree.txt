@@ -1,0 +1,17 @@
+fmriprep_test_derivs/
+|----analysis_configuration.txt	4.0K
+|----analysis_information.txt	0
+sub-10462/
+    ses-S1/
+        |----hello_world.txt	4.0K
+tmp_upload/
+    |----analysis_configuration.txt	4.0K
+    |----run_scripts.zip	4.0K
+    |----logs.zip	4.0K
+    |----analysis_information.txt	0
+    |----bids-fmriprep.zip	4.0K
+scripts/
+    |----run_script.sh	4.0K
+logs/
+    |----sub-10462_ses-S1_fmriprep.log	4.0K
+Total Directory Size:  60K

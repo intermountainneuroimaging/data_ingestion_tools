@@ -6,4 +6,3 @@ __pycache__
 /tmp/
 .idea
 virtualenv
-fmriprep_test_derivs/*

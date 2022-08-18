@@ -1,0 +1,12 @@
+image=/pl/active/ics/containers/fmriprep/fmriprep-v.21.0.0.sif
+
+singularity run --cleanenv -B $bidsdir:/data -B $outdir:/out -B $workdir:/work $image /data /out participant --participant_label $SUBJECT -w /work --ignore slicetiming --output-space {func,MNI152NLin2009cAsym:res-2} --use-aroma --aroma-melodic-dimensionality -100 --fs-license-file $fslicense --mem 62000 --no-submm-recon --write-graph --notrack --omp-nthreads 1 --skull-strip-fixed-seed   1>$olog 2>$elog
+
+
+# remove scratch directory after complete
+# rm -R $workdir
+
+## fmriprep options:
+#     --omp-nthreads 1 <and> --skull-strip-fixed-seed --> used for reliable execution, remove stocasticity 
+#     --notrack prevents fmriprep from senting metrics on your dataset to their server
+#     -- write-graph prints a workflow diagram
