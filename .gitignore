@@ -1,0 +1,9 @@
+ignore*
+MSM*
+*.pyc
+__pycache__
+*.DS_Store
+/tmp/
+.idea
+virtualenv
+fmriprep_test_derivs/*

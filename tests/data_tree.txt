@@ -1,0 +1,50 @@
+data_ingestion_tools/
+|----poetry.lock	104K
+|----pyproject.toml	4.0K
+|----fmripreproc.py	8.0K
+|----fmriprep.py	16K
+tests/
+    |----data_tree.txt	0
+    |----unit_tests.py	4.0K
+.git/
+    |----HEAD	4.0K
+    |----description	4.0K
+    |----config	4.0K
+    objects/
+        info/
+        pack/
+    hooks/
+        |----pre-applypatch.sample	4.0K
+        |----pre-push.sample	4.0K
+        |----pre-rebase.sample	8.0K
+        |----post-update.sample	4.0K
+        |----commit-msg.sample	4.0K
+        |----fsmonitor-watchman.sample	4.0K
+        |----pre-receive.sample	4.0K
+        |----applypatch-msg.sample	4.0K
+        |----update.sample	4.0K
+        |----prepare-commit-msg.sample	4.0K
+        |----pre-commit.sample	4.0K
+    branches/
+    info/
+        |----exclude	4.0K
+    refs/
+        tags/
+        heads/
+utils/
+    |----utils.py	8.0K
+    __pycache__/
+        |----utils.cpython-39.pyc	4.0K
+__pycache__/
+    |----fmriprep.cpython-39.pyc	8.0K
+.idea/
+    |----misc.xml	4.0K
+    |----workspace.xml	8.0K
+    |----modules.xml	4.0K
+    |----.gitignore	4.0K
+    |----vcs.xml	4.0K
+    |----data_ingestion_tools.iml	4.0K
+    inspectionProfiles/
+        |----profiles_settings.xml	4.0K
+        |----Project_Default.xml	4.0K
+Total Directory Size:  324K
