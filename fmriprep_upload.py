@@ -251,6 +251,8 @@ def upload_analysis(context):
         else:
             os.system('cp ' + context['scripts_path'] + ' ' + os.path.join(context['SRC'], 'tmp_upload'))
 
+        # TODO Zip REPORT FILE!!
+        
         # copy metadata files to upload directory
         os.system(
             'cp ' + os.path.join(context['SRC'], 'analysis_configuration.txt') + ' ' + os.path.join(context['SRC'],
